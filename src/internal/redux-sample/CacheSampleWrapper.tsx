@@ -8,6 +8,8 @@ const CacheSampleWrapper = () => {
   const { set: setTodos } = useCache<Todo[]>("todos");
 
   useEffect(() => {
+    // api 두번씩 호출되는데, 개발 환경에서만 side-effect 검출을 강화하기 위해서 그런것
+    // main.tsx 파일의 StrictMode 제거하면 해결되긴함
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data));
