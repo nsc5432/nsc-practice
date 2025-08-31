@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import { CacheProvider } from "../../external/redux/CacheProvider";
-import { CachedComponent } from "../../external/redux/CachedComponent";
+import CacheProvider from "../../external/redux/CacheProvider";
+import CachedComponent from "../../external/redux/CachedComponent";
 
 type User = {
   id: number;

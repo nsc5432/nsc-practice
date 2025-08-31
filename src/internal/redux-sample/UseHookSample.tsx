@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useCache } from "../../external/redux/useCache";
-import { CacheProvider } from "../../external/redux/CacheProvider";
+import useCache from "../../external/redux/useCache";
+import CacheProvider from "../../external/redux/CacheProvider";
 
 type Todo = { id: number; title: string; completed: boolean };
 
