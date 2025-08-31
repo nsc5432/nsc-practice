@@ -1,14 +1,7 @@
-import ApiCacheSample from "./redux-sample/ApiCacheSample";
-import { UseHookSample } from "./redux-sample/UseHookSample";
+import CacheSample from "./redux-sample/CacheSample";
 
 function App() {
-  return (
-    <>
-      <ApiCacheSample />
-      <hr />
-      <UseHookSample />
-    </>
-  );
+  return <CacheSample />;
 }
 
 export default App;
