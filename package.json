@@ -1,6 +1,6 @@
 {
     "name": "nsc-practice",
-    "version": "0.0.33",
+    "version": "0.0.34",
     "license": "MIT",
     "main": "dist/nsc-practice.umd.js",
     "module": "dist/nsc-practice.es.js",
