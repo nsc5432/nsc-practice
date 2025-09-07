@@ -1,0 +1,11 @@
+.nsc-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px;
+    display: inline-block;
+    background: white;
+    width: 180px;
+    vertical-align: top;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

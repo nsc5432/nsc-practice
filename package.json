@@ -1,44 +1,49 @@
 {
-  "name": "nsc-practice",
-  "version": "0.0.32",
-  "license": "MIT",
-  "main": "dist/nsc-practice.umd.js",
-  "module": "dist/nsc-practice.es.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "release": "vite build && npm version patch --no-git-tag-version && npm publish --access public"
-  },
-  "peerDependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.33.0",
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
-    "@types/react-redux": "^7.1.34",
-    "@vitejs/plugin-react": "^5.0.2",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2",
-    "vite-plugin-dts": "^4.5.4"
-  },
-  "dependencies": {
-    "@reduxjs/toolkit": "^2.8.2",
-    "react-redux": "^9.2.0",
-    "redux": "^5.0.1"
-  }
+    "name": "nsc-practice",
+    "version": "0.0.33",
+    "license": "MIT",
+    "main": "dist/nsc-practice.umd.js",
+    "module": "dist/nsc-practice.es.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "release": "vite build && npm version patch --no-git-tag-version && npm publish --access public"
+    },
+    "peerDependencies": {
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.33.0",
+        "@types/react": "^19.1.10",
+        "@types/react-dom": "^19.1.7",
+        "@types/react-redux": "^7.1.34",
+        "@vitejs/plugin-react": "^5.0.2",
+        "eslint": "^9.33.0",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.20",
+        "globals": "^16.3.0",
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1",
+        "typescript": "~5.8.3",
+        "typescript-eslint": "^8.39.1",
+        "vite": "^7.1.2",
+        "vite-plugin-css-injected-by-js": "^3.5.2",
+        "vite-plugin-dts": "^4.5.4"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^2.8.2",
+        "chart.js": "^4.5.0",
+        "react-chartjs-2": "^5.3.0",
+        "react-redux": "^9.2.0",
+        "redux": "^5.0.1"
+    }
 }

@@ -1,0 +1,17 @@
+.nsc-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+.nsc-th,
+nsc-td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.nsc-th {
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+}
