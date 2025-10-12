@@ -24,9 +24,10 @@ interface LineChartProps<T> {
     labels: (row: T) => string;
     datasets: LineChartDataset<T>[];
     title?: string;
+    wrapperClass?: string;
 }
 
-const LineChart = <T,>({ data, labels, datasets, title }: LineChartProps<T>) => {
+const LineChart = <T,>({ data, labels, datasets, title, wrapperClass = '' }: LineChartProps<T>) => {
     const chartData = {
         labels: data.map(labels),
         datasets: datasets.map((ds) => ({
@@ -58,7 +59,11 @@ const LineChart = <T,>({ data, labels, datasets, title }: LineChartProps<T>) => 
         },
     };
 
-    return <Line data={chartData} options={options} />;
+    return (
+        <div className={`${wrapperClass}`}>
+            <Line data={chartData} options={options} />
+        </div>
+    );
 };
 
 export default LineChart;

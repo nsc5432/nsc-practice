@@ -10,11 +10,12 @@ export type GridColumn<T> = {
 interface TableGridProps<T> {
     data: T[];
     columns: GridColumn<T>[];
+    wrapperClass?: string;
 }
 
-const TableGrid = <T,>({ data, columns }: TableGridProps<T>) => {
+const TableGrid = <T,>({ data, columns, wrapperClass = '' }: TableGridProps<T>) => {
     return (
-        <table className="nsc-table">
+        <table className={`nsc-table ${wrapperClass}`}>
             <thead>
                 <tr>
                     {columns.map((col) => (

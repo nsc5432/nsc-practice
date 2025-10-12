@@ -22,9 +22,10 @@ interface BarChartProps<T> {
     labels: (item: T) => string;
     datasets: BarChartDataset<T>[];
     title?: string;
+    wrapperClass?: string;
 }
 
-const BarChart = <T,>({ data, labels, datasets, title }: BarChartProps<T>) => {
+const BarChart = <T,>({ data, labels, datasets, title, wrapperClass = '' }: BarChartProps<T>) => {
     const chartData = {
         labels: data.map(labels),
         datasets: datasets.map((ds) => ({
@@ -53,7 +54,11 @@ const BarChart = <T,>({ data, labels, datasets, title }: BarChartProps<T>) => {
         },
     };
 
-    return <Bar data={chartData} options={options} />;
+    return (
+        <div className={`${wrapperClass}`}>
+            <Bar data={chartData} options={options} />
+        </div>
+    );
 };
 
 export default BarChart;
